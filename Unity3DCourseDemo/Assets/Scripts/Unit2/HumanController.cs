@@ -15,6 +15,7 @@ public class HumanController : MonoBehaviour
     void Update()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
+        
         transform.Translate(Vector3.right * speed * Time.deltaTime * horizontalInput);
         if (Input.GetKeyDown(KeyCode.Space)) {
             Vector3 position = transform.position;
