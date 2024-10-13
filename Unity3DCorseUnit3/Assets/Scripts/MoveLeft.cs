@@ -6,13 +6,12 @@ public class MoveLeft : MonoBehaviour
 {
 
     private PlayerController player;
-    private Animator animator;
+    
     public float speed = 10;
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<PlayerController>();
-        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
